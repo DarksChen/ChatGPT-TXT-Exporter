@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT TXT Exporter (Memory Collector Mk.I)",
+  "version": "1.2",
+  "description": "點擊圖示即可輕鬆匯出儲存為本地檔案的ChatGPT對話。",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "file:///*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
